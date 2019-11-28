@@ -19,5 +19,6 @@ Notice that you need to install bpftool and run script with sudo
 
 Both programs can be compilated and loaded to the kernel by following way:
 
-clang -O2 -Wall -target bpf -c <filename>.c -o sample.o
-sudo ip link set dev <interface_name> xdp obj sample.o
+    clang -O2 -Wall -target bpf -c FILENAME.c -o sample.o 
+ 
+    sudo ip link set dev <interface_name> xdp obj sample.o
