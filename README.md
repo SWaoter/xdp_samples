@@ -2,7 +2,7 @@
 Two programs that can show basics of the XDP. 
 1. mss_fix.c
 
-This program will change MSS value of all incoming SYN-TCP packets. 
+This program will change MSS value of all incoming SYN-TCP packets.  This will cause that MSS of all output packets will be <= 1400. 
 
 You can change the final value, default is 1400.
  
